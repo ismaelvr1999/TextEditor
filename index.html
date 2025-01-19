@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2.3rem" height="2.3rem" viewBox="0 0 20 20">
+                    <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75" />
+                        <path d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001z" />
+                        <path d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1" />
+                    </g>
+                </svg>
+                <h4>File</h4>
+                <div class="drop-down-menu">
+                    <div class="drop-down-item" id="openModal">
+                        Open file
+                    </div>
+                    <div class="drop-down-item" id="saveButton">
+                        Save
+                    </div>
+                </div>
+            </div>
+<!-- TODO
+            <div class="sidebar-item">
+                <h4>Edit</h4>
+                <div class="drop-down-menu">
+                    <div class="drop-down-item">
+                        Search
+                    </div>
+                    <div class="drop-down-item">
+                        Replace
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="text-input" >
+            <input type="text" name="fileName" id="fileName" value="new_file.txt">
+            <textarea  name="" id="textTarea" autofocus ></textarea>
+        </div>
+    </div>
+    
+    <div class="container-modal hide" id="containerModal">
+        <div class="content-modal">
+            <h2 class="title-modal">Open file</h2>
+            <input type="file" name="Open" id="openFile">
+            <div class="drop-area" id="dropArea">
+                <p>Drop a File Text</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
