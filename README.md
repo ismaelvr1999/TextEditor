@@ -19,4 +19,4 @@
 ![Screenshot-3](screenshot-3.png)
 
 ## Demo Link
-You can try the app here: [Text Editor Demo](https://ismaelvr1999.github.io/DropAndPlay/)
+You can try the app here: [Text Editor Demo](https://ismaelvr1999.github.io/TextEditor/)
